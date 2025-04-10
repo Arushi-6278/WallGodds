@@ -18,16 +18,16 @@ const Footer = () => {
     alignItems: 'center',
     borderRadius: '50%',
     width: '30px', 
-    height: '30px', /* Adjust size as needed */
-    marginLeft: '1px' /* Adjust spacing from text */
+    height: '30px', 
+    marginLeft: '1px' 
   }}>
     <img
       src="Arrow-know-more.png"
       alt="Know more"
       style={{
         verticalAlign: 'middle',
-        maxWidth: '80%', /* Adjust image size within the circle */
-        maxHeight: '80%' /* Adjust image size within the circle */
+        maxWidth: '80%', 
+        maxHeight: '80%' 
       }}
     />
   </span>
@@ -48,8 +48,8 @@ const Footer = () => {
         
         <img
           src="/let’s work together.png"
-          alt="LET'S WORK TOGETHER" // Important for accessibility
-          className="lets-work-together-image" // Optional class for styling
+          alt="LET'S WORK TOGETHER" 
+          className="lets-work-together-image" 
         />
         <div className="circle"></div>
       </div>
