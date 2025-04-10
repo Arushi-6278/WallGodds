@@ -1,4 +1,7 @@
 /* Global CSS (e.g., index.css or App.module.css) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+
 :root {
     --font-family: 'Comfortaa', sans-serif;
 }

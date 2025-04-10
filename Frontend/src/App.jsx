@@ -7,8 +7,11 @@ import Upload from "./Components/UploadModule/Upload";
 import Aboutus from "./Components/AboutModule/Aboutus";
 import Error404 from "./Components/ErrorModule/Error404";
 
+
 function App() {
+    
     return (
+        
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />

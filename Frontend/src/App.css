@@ -41,6 +41,8 @@
   color: #888;
 } */
 
+
+
 html,
 body,
 #root {
@@ -54,8 +56,277 @@ body {
     "Helvetica Neue", sans-serif;
   background-color: #f8f9fa;
   color: #333;
+  display: flex; /* Enable flexbox on the body */
+  flex-direction: column;
+ 
+  
 }
 
 ::-webkit-scrollbar {
   width: 8px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 100px; /* ⬅️ This line solves the issue */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 100px;
+  padding-bottom: 200px;
+}
+
+.title {
+  font-size: 2em;
+  color: #4a4aef;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 1696px;
+  height: 272px;
+  font-family: 'Inter', sans-serif !important;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: justify;
+ 
+  padding: 20px;
+  color: #808080;
+   /* Or adjust based on how it looks on the gradient */
+  border-radius: 10px; /* Optional: for soft corners like in your design */
+  
+   /* Responsive layout */
+   width: 100%;
+   max-width: 1200px; /* You can tweak this value */
+   box-sizing: border-box;
+   margin: 0 auto;
+ 
+   border-radius: 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  gap: 40px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+ margin-left: 100px;
+  
+    margin-bottom: 20px; /* Was 40px */
+  
+  
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.image {
+  width: 550px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.textContainer {
+  flex: 1;
+  min-width: 400px;
+  max-width: 600px;
+  
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #6a6aef;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #808080;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.joinTitle {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: -200px;
+  text-align: center;
+margin-top:50px;
+  background: linear-gradient(90deg, #2A00FF 0%, #FF5959 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: center;
+  gap: 60px; /* Even spacing between icons */
+  width: 456px;
+  height: 72px;
+  margin: 40px auto; 
+  margin-bottom: -400px;
+}
+
+.icon {
+  margin: 0 10px;
+  
+ 
+}
+.icon img {
+  width: 37px;  /* Adjust to desired size */
+  height: 37px;
+  object-fit: contain;
+}
+/* Footer.css */
+/* App.css */
+/* App.css */
+/* ... other styles ... */
+
+.footer-container {
+  background-color: #ABB3FE; /* Replace with actual color */
+  padding: 30px 60px 150px; /* Adjust padding based on Figma */
+  margin-top: auto;
+  border-top: 1px solid #00000010;
+  overflow: hidden;
+  position: relative;
+  bottom: -200px;
+  width: 100%;
+  box-sizing: border-box;
+min-width: 1500px;
+  z-index: 10;
+  height: 230px;
+}
+.footer-right-elements {
+  display: flex; /* Arranges "Know more" and GitHub icon horizontally */
+  align-items: center; /* Vertically aligns "Know more" and GitHub icon */
+  column-gap: 20px;
+   
+}
+
+.footer-links a {
+  display: flex; /* To potentially align text and arrow if needed */
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial; /* Replace with actual font */
+  font-size: 16px; /* Adjust font size */
+  font-weight: 400; /* Adjust font weight */
+  color: black; /* Replace with actual color */
+  position: relative;
+  z-index: 1;
+  
+}
+
+.rights-reserved-text{
+  margin-top:-10px;
+}
+.footer-content a {
+  color: black; /* Replace with actual color */
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 600px;
+ margin-top:-18px;
+}
+
+.github-icon {
+  margin-left: 25px; /* Adjust spacing */
+}
+
+.footer-image-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the container */
+  transform: translateX(-50%); /* Adjust centering */
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+
+
+.lets-work-together-image{
+  width: 1380px;
+height: 284;
+top: 74.14px;
+left: 94px;
+border-width: 1px;
+z-index: 2;
+
+
+
+
+}
+.circle {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -30%); /* Perfect center */
+  width: 500px; /* Wider than tall */
+  height: 380px;
+  background-color: #ffd8e4;
+  opacity: 0.8;
+  filter: blur(0px);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gradientHeading {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: linear-gradient(90deg, #2A00FF 0%, #FF5959 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 50px;
+}
+
+.headingGradient {
+  width: 866px;
+  height: 40px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0 auto;
+  margin-left: 150px; /* to center it horizontally */
+  margin-top: -8px;
+  background: linear-gradient(90deg, #2A00FF 0%, #FF5959 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

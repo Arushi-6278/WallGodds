@@ -5,11 +5,17 @@ import Profile from "/ProfileIcon.svg";
 import Style from "./NavBar.module.css";
 import ThemeToggle from "../../ThemeModule/ThemeToggle";
 import Logo from "./Logo";
+import { useLocation } from "react-router-dom";
+
 
 
 const NavBar = () => {
+    const location = useLocation();
+    const isAboutUsPage = location.pathname === "/aboutus";
+
     return (
-        <div className={Style.navbarWrapper}>
+        // <div className={Style.navbarWrapper}>
+        <div className={`${Style.navbarWrapper} ${isAboutUsPage ? Style.navbarStatic : ""}`}>
              {/* Logo Section */}
              <Logo />
 

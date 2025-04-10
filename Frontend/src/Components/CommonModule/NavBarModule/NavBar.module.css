@@ -8,7 +8,12 @@
     height: fit-content;
     box-sizing: border-box;
 }
-
+.navbarStatic {
+    position: static !important;
+    top: unset !important;
+    margin-top: 0.8em;
+  }
+  
 .navbarWrapper {
     display: flex;
     gap: 0.1em;
